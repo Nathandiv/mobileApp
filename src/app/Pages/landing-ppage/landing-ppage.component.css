@@ -1,0 +1,38 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background: url('/assets/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.landing-container h1, .landing-container p {
+  margin: 10px 0;
+  z-index: 1;
+}
+
+.landing-container a.btn {
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.landing-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Optional dark overlay to enhance text visibility */
+  z-index: 0;
+}
