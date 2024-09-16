@@ -12,5 +12,6 @@ export const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'settings',component:SettingsComponent},
   {path:'**',component:Error404Component}
+  {path:""}
 
 ];
