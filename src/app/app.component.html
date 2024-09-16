@@ -1,3 +1,10 @@
+<div *ngIf="screen <=576">
+  <router-outlet />
+</div>
+
+<div *ngIf="screen > 576">
+  <h1>USE MOBILE</h1>
+</div>
 
 
-<router-outlet />
+
