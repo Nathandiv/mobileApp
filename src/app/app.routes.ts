@@ -10,10 +10,10 @@ import { AuthenticatorComponent } from './Pages/authenticator/authenticator.comp
 
 export const routes: Routes = [
   {path:'',component:LandingPpageComponent},
+  {path:'authentic',component:AuthenticatorComponent},
   {path: 'home', component: HomeComponent},
   {path: 'about', component:AboutComponent},
   {path:'contact',component:ContactComponent},
   {path:'settings',component:SettingsComponent},
-  {path:'authentic',component:AuthenticatorComponent},
   {path:'**',component:Error404Component}
 ];
