@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 import { AboutComponent } from './Pages/about/about.component';
 import { SettingsComponent } from './Pages/settings/settings.component';
 import { Error404Component } from './Pages/error404/error404.component';
+import { AuthenticatorComponent } from './Pages/authenticator/authenticator.component';
 
 export const routes: Routes = [
   {path:'',component:LandingPpageComponent},
@@ -13,7 +14,6 @@ export const routes: Routes = [
   {path: 'about', component:AboutComponent},
   {path:'contact',component:ContactComponent},
   {path:'settings',component:SettingsComponent},
-  {path:'**',component:Error404Component},
-
-
+  {path:'authentic',component:AuthenticatorComponent},
+  {path:'**',component:Error404Component}
 ];
